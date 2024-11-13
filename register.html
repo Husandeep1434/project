@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/abc.png" type="image/png">
+    <style>
+        .one{
+            margin-left: 300px;
+            margin-right: 350px;
+            margin-top: 50px;
+            padding-left: 150px;
+            font-size: 30px;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            background-color: white;
+            padding-left: 30px;
+            margin-top: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px ;
+        }
+        button{
+            border: 2px solid black;
+            border-radius: 6px;
+            width: 180px;
+            height: 40px;
+            text-align: center;
+            margin-left: 250px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .date{ 
+            margin-left: 0px;
+            margin-bottom: 10px;
+            border: none;
+            width: 150px;
+            height: 40px;
+
+        }
+        form{
+            background-color: cornflowerblue;
+            margin-left: 50px;
+            width: 500px;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 50px;
+        }
+    </style>
+    <script>
+        function updatePayment(){
+            var selectedOption = document.getElementById("options").value;
+            var paymentInput = document.getElementById("payment");
+            
+            if (selectedOption === "option1"){
+                paymentInput.value = "400";
+            }else if (selectedOption === "option2"){
+                paymentInput.value = " 450";
+            }else if (selectedOption === "option3"){
+                paymentInput.value = " 500";
+            }else if (selectedOption === "option4"){
+                paymentInput.value = " 499";
+            }else if(selectedOption === "option5"){
+                paymentInput.value = " 399";
+            }else if(slectedOption === "option6"){
+                paymentInput.value = " 550";
+            }else if(selectedOption === "option7"){
+                paymentTnput.value = " 480";
+            }else if(selectedOption === "option8"){
+                paymentInput.value = " 650";
+            }else{paymentInput.value = "";}
+        }
+    </script>
+</head>
+<body style="background-image: url(/mooc\ gif.gif);background-repeat: no-repeat;background-position: center;background-size: 100%;background-color: rgb(16, 171, 182);">
+    <div class="one">
+        <h1 style="text-align: center;">Register</h1>
+        <div>
+            <form action="">
+            <p>
+                <label for="name">Name</label><br>
+                    <input type="text" name="name" id="">
+                </p>
+            <p>
+                <label for="study">Study</label><br>
+                    <input type="text" name="" id="">
+                </p>
+            <p> 
+                <label for="name">School/college Name</label><br>
+                    <input type="text" name="" id="">
+                </p>
+            <p>  
+                <label for="email">Email</label><br>
+                    <input type="email" name="email" id="">
+                </p>
+            <p> <label for="phoneno.">Phone No.</label><br>
+                    <input type="text" name="number" id="">
+                </p>
+            <p> <label for="course">Select Course</label><br>
+                    <select id="options" name="options" onchange="updatePayment()">
+                        <option value="option1">Time Management</option>
+                        <option value="option2">Anger management</option>
+                        <option value="option3">Interview Skills</option>
+                        <option value="option4">Communication Skills</option>
+                        <option value="option5">Mental Health Awareness</option>
+                        <option value="option6">Stress management</option>
+                        <option value="option7">Interpersonal Skills</option>
+                        <option value="option8">Leadership Skills</option>
+                    </select>
+                </p>
+            <p>
+                <label for="payment">Payment</label><br>
+                    <input type="text" name="payment" id="payment" readonly>
+            </p>
+             </form>
+            <button onclick="document.location='/transaction.html' " value="next">Next</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/abc.png" type="image/png">
+    <style>
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        input{
+            width: 300px;
+            height: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding-left: 10px;
+        }
+        p{
+            border: 2px solid lightgray;
+            width: 400px;
+            margin-left: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            font-size: 25px;
+        }
+        label{
+            text-align: left;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            margin-left: 700px;
+            border-radius: 4px;
+        }
+        .ab{
+            width:30px;
+            height: 40px;
+            text-align: center;
+            margin-left: 450px;
+            border-radius: 4px;
+        }
+        form{
+            margin-left: 10px;
+        }
+    </style>
+    
+</head>
+<body style="background-color: rgb(220, 191, 227);" >
+    <div>
+        <h1>Transaction Details</h1>
+        <div>
+            <form action="" onsubmit="handleForm(event)">
+                <p>
+                    <label for="name">Transaction done from which name</label><br>
+                        <input type="text" name="name" id="">
+                    </p>
+                <p>
+                    <label for="number">Transaction number</label><br>
+                        <input type="text" name="number" id="">
+                    </p>
+                <p>
+                    <label for="number">UTR Number</label><br>
+                        <input type="text" name="number" id="">
+                    </p>
+                <p>
+                    <label for="date">Transaction date </label><br>
+                        <input type="date" name="date" id="">
+                    </p>
+                <p>
+                    <label for="time">Transaction Time</label><br>
+                        <input type="time" name="time" id="">
+                    </p>
+            </form>
+            
+            <button onclick="document.location='/submit1.html'" value="submit" id="count" >Submit</button>
+        </div>
+    </div>
+    
+</body>
+</html>
